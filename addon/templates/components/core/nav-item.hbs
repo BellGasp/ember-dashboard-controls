@@ -1,0 +1,9 @@
+{{#if destination}}
+  {{#link-to destination class="nav-link"}}
+    {{#if hasBlock}}
+      {{yield}}
+    {{else}}
+      {{label}}
+    {{/if}}
+  {{/link-to}}
+{{/if}}

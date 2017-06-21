@@ -1,0 +1,1 @@
+export { default } from 'ember-dashboard-controls/components/base/db-nav-bordered';

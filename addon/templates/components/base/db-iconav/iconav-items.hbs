@@ -1,0 +1,12 @@
+<ul class="nav nav-pills iconav-nav flex-md-column">
+  <!--
+    HACK: The first nav-item doesn't behave correctly when receiving when
+    receiving the active class, the issue has been reported.
+  -->
+  <li class="nav-item"></li>
+
+  {{yield (hash
+    item=(component 'base/db-iconav/iconav-item')
+    action=(component 'base/db-iconav/iconav-action')
+  )}}
+</ul>

@@ -1,0 +1,9 @@
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  {{text}}
+{{/if}}
+
+{{#if displayProgress}}
+  <span class="list-group-progress" style="{{progressStyle}}"></span>
+{{/if}}

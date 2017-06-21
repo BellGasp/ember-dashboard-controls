@@ -1,0 +1,11 @@
+{{#if hasBlock}}
+  {{yield (hash
+    navigation=(component 'base/db-divider/divider-navigation')
+  )}}
+{{else}}
+  {{#if text}}
+    {{#base/db-divider/divider-heading}}
+      {{text}}
+    {{/base/db-divider/divider-heading}}
+  {{/if}}
+{{/if}}

@@ -1,0 +1,10 @@
+<h3 class="statcard-number">
+  {{value}}
+
+  {{#if delta}}
+    <small class="delta-indicator {{deltaClass}}">{{delta}}</small>
+  {{/if}}
+</h3>
+{{#if description}}
+  <span class="statcard-desc">{{description}}</span>
+{{/if}}
