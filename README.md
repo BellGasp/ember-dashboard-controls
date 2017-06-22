@@ -51,3 +51,7 @@ _Simple Dashhead Example:_
 ```
 
 ## Contributions
+Any contribution is more than welcomed. If you plan on introducing a new feature, please open an issue and share your idea prior to implementing it, it could save you precious time!
+
+## Troubleshooting
+If something is not working as expected, simply open an issue and we'll discuss how we'll go about fixing it!
