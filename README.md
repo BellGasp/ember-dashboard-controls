@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BellGasp/ember-dashboard-controls.svg?branch=master)](https://travis-ci.org/BellGasp/ember-dashboard-controls)
 [![Code Climate](https://codeclimate.com/github/BellGasp/ember-dashboard-controls/badges/gpa.svg)](https://codeclimate.com/github/BellGasp/ember-dashboard-controls)
+[![NPM Version](https://badge.fury.io/js/ember-dashboard-controls.svg)](https://badge.fury.io/js/ember-dashboard-controls)
 
 ## Description
 This Ember Addon simply wraps some of the new controls available in the [Dashboard Bootstrap Theme](https://themes.getbootstrap.com/products/dashboard) into an easy to use addon.
