@@ -1,17 +1,25 @@
 {
-  "name": "ember-dashboard-controls",
-  "version": "1.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "@bell-gasp/ember-dashboard-controls",
+  "version": "0.0.0-beta1",
+  "description": "A simple Ember wrapper for the Bootstrap Dashboard theme.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "bootstrap",
+    "dashboard"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Jean-Philippe Roy",
+    "email": "ohnoesmyoreos@gmail.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BellGasp/ember-dashboard-controls.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
