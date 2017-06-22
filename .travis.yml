@@ -25,6 +25,7 @@ install:
 script:
 - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
 notifications:
+  email: false
   slack:
     rooms:
       secure: FbG7q2WitdnQ3TNXP+B7QPGLQ67mf/x5BIGYdiU94AQTHn+DFe9YyBqfAkTjij177eN84bgRxYvHkeuDqvIBSSYmEDXoHzCR+DROseOSzKJ8l5ORjCqwAwUvCWtx5/At1kOAYa9tmYFhkeSuC2GycVsaXzuMzIe1MlaftSUivy3Y3+XhRPd/TkvGrp2wpcdWChv7DKtmFr1aG/pk0DZkhmV2G0d8cl6WAVHYFqh+vCWEMN56B+uhTRdt6lcyMnYq/LubKSq2bllP2auwdHy+WoPGLEVtTQ7VeV62A5JTZmrDvpklfVyUPe4TpkIRP3EOZsC4LDXD9t9ps4+e2Od8UV7T2QIpz3H7lihyEWl3C2f03dfKfR2NeaGnVmV+231U6PTk6k8dq2EDocG9QD2rTmFEr795r2BlhvgeeNoj8dmq88MSgPDCFsA/IX2xNAXmKDaYAJKwThaG2lv7A9U6aCArO6l+EMyWE3VplMnvnM9VGlBlxI4B6bKt/UJtG5R1Fz4LD1H7B/lmFUvdwIOZOLYiU4AvDNA4uWmdSUzIYQGmsQN8I058VXI9oRBmYd8vWHzx3UM3Cjl2O5Jq1KRY0/7hWfxYCkCYQsLKbGxwoWR9EBlM9O/hJC/yhY9FfbvNPKujLt987Yxcky1bt0qa5eQsAuLteaRA+oWV3Jw+jkg=
