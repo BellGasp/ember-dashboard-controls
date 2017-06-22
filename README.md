@@ -1,5 +1,6 @@
 # Ember Dashboard Controls
 
+[![Build Status](https://travis-ci.org/BellGasp/ember-dashboard-controls.svg?branch=master)](https://travis-ci.org/BellGasp/ember-dashboard-controls)
 [![Code Climate](https://codeclimate.com/github/BellGasp/ember-dashboard-controls/badges/gpa.svg)](https://codeclimate.com/github/BellGasp/ember-dashboard-controls)
 
 ## Description
