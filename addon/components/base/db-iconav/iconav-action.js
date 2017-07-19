@@ -6,7 +6,9 @@ export default Ember.Component.extend({
 
   tagName: 'li',
   classNames: 'nav-item',
-
+  initTooltip: Ember.on('didInsertElement', function () {
+    this.$('[data-toggle="tooltip"]').tooltip();
+  }),
   onClick() {},
 
   click() {
