@@ -32,6 +32,14 @@ test('it binds the label property', function(assert) {
   assert.equal(this.$('.iconav-nav-label').text().trim(), "Home");
 });
 
+test('it binds the title property', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`{{base/db-iconav/iconav-action title="Home"}}`);
+
+  assert.equal(this.$('.nav-link').attr('data-original-title'), "Home");
+});
+
 test('it calls the action when clicked', function(assert) {
   assert.expect(1);
 

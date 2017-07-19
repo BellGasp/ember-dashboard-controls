@@ -21,3 +21,11 @@ test('it binds the icon property', function(assert) {
 
   assert.equal(this.$('span.iconav-brand-icon.icon.icon-home').length, 1);
 });
+
+test('it binds the title property', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`{{base/db-iconav/iconav-action title="Home"}}`);
+
+  assert.equal(this.$('.nav-link').attr('data-original-title'), "Home");
+});
