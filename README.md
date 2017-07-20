@@ -20,7 +20,7 @@ Like most ember addons, simply run `ember install ember-dashboard-controls` and 
 
 ### Dashhead
 
-The Dashhead currently exposes the `titles` and `toolbar` component which can be used to create the left and right side of the dashhead component respectively.
+The Dashhead currently exposes the `titles` and `toolbar` components which can be used to create the left and right side of the dashhead component respectively.
 
 #### Titles
 The `titles` component exposes the `title` and `subtitle` components which can be used to display the title and subtitle in the Dashhead.
@@ -28,7 +28,8 @@ The `titles` component exposes the `title` and `subtitle` components which can b
 #### Toolbar
 The `toolbar` currently only exposes the `divider` component which is used to create vertical dividers inside the toolbar. The toolbar items themselves should use the `dashhead-toolbar-item` class for the time being.
 
-_Simple Dashhead Example:_
+_Here's what a complete dashhead would look like:_
+
 ```hbs
 {{#db-dashhead as |dashhead|}}
   {{#dashhead.titles as |titles|}}
@@ -50,6 +51,36 @@ _Simple Dashhead Example:_
     </div>
   {{/dashhead.toolbar}}
 {{/db-dashhead}}
+```
+
+### Icon Navigation
+
+The Icon Navigation currently exposes the `brand` and `items` components which can be used to create the brand and navigation items of your icon menu.
+
+#### Brand
+
+The `brand` component can be configured via the `icon` and `destination` properties. As you've probably guessed already the `icon` property lets you define the icon class that will be applied to your brand and the `destination` property will let you dictate the navigation target of the brand element.
+
+#### Items
+
+The `items` component exposes the `item` component which together are combined to create the menu items.
+
+##### Item
+
+The actual navigation item can be configured using the `icon`, `label` and `destination` properties.
+
+_Here's what a complete iconav would look like:_
+
+```hbs
+{{#db-iconav as |nav|}}
+  {{nav.brand icon="icon icon-home"}}
+
+  {{#nav.items as |items|}}
+    {{items.item icon="icon icon-home" label="Home"}}
+    {{items.item icon="icon icon-user" label="Profile"}}
+    {{items.item icon="icon icon-gauge" label="Dashboard"}}
+  {{/nav.items}}
+{{/db-iconav}}
 ```
 
 ## Contributions
