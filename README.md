@@ -1,8 +1,9 @@
 # Ember Dashboard Controls
 
+[![npm version](https://badge.fury.io/js/ember-dashboard-controls.svg)](https://badge.fury.io/js/ember-dashboard-controls)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-dashboard-controls.svg)](https://emberobserver.com/addons/ember-dashboard-controls)
 [![Build Status](https://travis-ci.org/BellGasp/ember-dashboard-controls.svg?branch=master)](https://travis-ci.org/BellGasp/ember-dashboard-controls)
 [![Code Climate](https://codeclimate.com/github/BellGasp/ember-dashboard-controls/badges/gpa.svg)](https://codeclimate.com/github/BellGasp/ember-dashboard-controls)
-[![NPM Version](https://badge.fury.io/js/ember-dashboard-controls.svg)](https://badge.fury.io/js/ember-dashboard-controls)
 
 ## Description
 This Ember Addon simply wraps some of the new controls available in the [Dashboard Bootstrap Theme](https://themes.getbootstrap.com/products/dashboard) into an easy to use addon.
@@ -28,7 +29,7 @@ The `titles` component exposes the `title` and `subtitle` components which can b
 The `toolbar` currently only exposes the `divider` component which is used to create vertical dividers inside the toolbar. The toolbar items themselves should use the `dashhead-toolbar-item` class for the time being.
 
 _Simple Dashhead Example:_
-```
+```hbs
 {{#db-dashhead as |dashhead|}}
   {{#dashhead.titles as |titles|}}
     {{#titles.title}}Example Title{{/titles.title}}
