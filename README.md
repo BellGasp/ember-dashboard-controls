@@ -23,9 +23,11 @@ Like most ember addons, simply run `ember install ember-dashboard-controls` and 
 The Dashhead currently exposes the `titles` and `toolbar` components which can be used to create the left and right side of the dashhead component respectively.
 
 #### Titles
+
 The `titles` component exposes the `title` and `subtitle` components which can be used to display the title and subtitle in the Dashhead.
 
 #### Toolbar
+
 The `toolbar` currently only exposes the `divider` component which is used to create vertical dividers inside the toolbar. The toolbar items themselves should use the `dashhead-toolbar-item` class for the time being.
 
 _Here's what a complete dashhead would look like:_
@@ -81,6 +83,24 @@ _Here's what a complete iconav would look like:_
     {{items.item icon="icon icon-gauge" label="Dashboard"}}
   {{/nav.items}}
 {{/db-iconav}}
+```
+
+### List Group
+
+The List Group currently exposes the `header` and `item` components in order to enable the creation of list groups.
+
+```hbs
+{{#db-list-group as |lg|}}
+  {{lg.header text="Header"}}
+
+  {{! Item inline style }}
+  {{lg.item class="item-1" text="text 1" progress=25}}
+
+  {{! Item block style }}
+  {{#lg.item class="item-2" progress=33}}
+    text 2
+  {{/lg.item}}
+{{/db-list-group}}
 ```
 
 ## Contributions
