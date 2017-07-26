@@ -10,8 +10,7 @@ export default Ember.Component.extend({
   classNames: 'nav-item',
 
   initTooltip: on('didInsertElement', observer('title', function () {
-    this.$('[data-toggle="tooltip"]').tooltip('dispose');
-    this.$('[data-toggle="tooltip"]').tooltip();
+    this.$('[data-toggle="tooltip"]').tooltip('dispose').tooltip();
   })),
 
   onClick() {},
