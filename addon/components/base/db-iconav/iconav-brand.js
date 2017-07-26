@@ -9,8 +9,7 @@ export default Ember.Component.extend({
   destination: 'index',
 
   initTooltip: on('didInsertElement', observer('title', function () {
-    this.$('[data-toggle="tooltip"]').tooltip({
-      content: this.get('title')
-    });
+    this.$('[data-toggle="tooltip"]').tooltip('dispose');
+    this.$('[data-toggle="tooltip"]').tooltip();
   })),
 });
