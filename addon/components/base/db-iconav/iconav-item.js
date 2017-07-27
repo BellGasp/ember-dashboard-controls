@@ -1,8 +1,8 @@
 import Ember from 'ember';
 import layout from '../../../templates/components/base/db-iconav/iconav-item';
-import tooltip from '../../../mixins/tooltip';
+import Tooltip from '../../../mixins/tooltip';
 
-export default Ember.Component.extend(tooltip, {
+export default Ember.Component.extend(Tooltip, {
   layout,
 
   tagName: 'li',
