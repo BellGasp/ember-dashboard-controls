@@ -1,17 +1,12 @@
 import Ember from 'ember';
 import layout from '../../../templates/components/base/db-iconav/iconav-action';
+import tooltip from '../../../mixins/tooltip';
 
-const { on, observer } = Ember
-
-export default Ember.Component.extend({
+export default Ember.Component.extend(tooltip, {
   layout,
 
   tagName: 'li',
   classNames: 'nav-item',
-
-  initTooltip: on('didInsertElement', observer('title', function () {
-    this.$('[data-toggle="tooltip"]').tooltip();
-  })),
 
   onClick() {},
 
