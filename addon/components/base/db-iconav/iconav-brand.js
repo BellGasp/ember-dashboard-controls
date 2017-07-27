@@ -1,14 +1,9 @@
 import Ember from 'ember';
 import layout from '../../../templates/components/base/db-iconav/iconav-brand';
+import tooltip from '../../../mixins/tooltip';
 
-const { on, observer } = Ember
-
-export default Ember.Component.extend({
+export default Ember.Component.extend(tooltip, {
   layout,
 
-  destination: 'index',
-
-  initTooltip: on('didInsertElement', observer('title', function () {
-    this.$('[data-toggle="tooltip"]').tooltip('dispose').tooltip();
-  })),
+  destination: 'index'
 });
