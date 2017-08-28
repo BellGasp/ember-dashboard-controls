@@ -34,12 +34,12 @@ _Here's what a complete dashhead would look like:_
 
 ```hbs
 {{#db-dashhead as |dashhead|}}
-  {{#dashhead.titles as |titles|}}
+  {{#dh.titles as |titles|}}
     {{#titles.title}}Example Title{{/titles.title}}
     {{#titles.subtitle}}Example Subtitle{{/titles.subtitle}}
-  {{/dashhead.titles}}
+  {{/dh.titles}}
 
-  {{#dashhead.toolbar as |toolbar|}}
+  {{#dh.toolbar as |toolbar|}}
     <div class="btn-group dashhead-toolbar-item">
       <button type="button" class="btn btn-outline-primary">1</button>
       <button type="button" class="btn btn-outline-primary">2</button>
@@ -51,7 +51,7 @@ _Here's what a complete dashhead would look like:_
       <button type="button" class="btn btn-outline-primary">3</button>
       <button type="button" class="btn btn-outline-primary">4</button>
     </div>
-  {{/dashhead.toolbar}}
+  {{/dh.toolbar}}
 {{/db-dashhead}}
 ```
 
