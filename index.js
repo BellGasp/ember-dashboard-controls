@@ -2,9 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-dashboard-controls',
-
-  isDevelopingAddon() {
-    return true;
-  }
+  name: 'ember-dashboard-controls'
 };
