@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import LinkComponent from '@ember/routing/link-component';
 
 export function initialize() {
-  Ember.LinkComponent.reopen({
+  LinkComponent.reopen({
     attributeBindings: ['data-toggle', 'data-placement', 'data-container']
   })
 }
