@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
+import { htmlSafe } from '@ember/string';
 import layout from '../../../templates/components/base/db-list-group/list-group-item';
 
-const { computed, String: { htmlSafe } } = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
 
   tagName: 'li',
