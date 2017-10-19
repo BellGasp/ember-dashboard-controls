@@ -1,3 +1,7 @@
 {{#link-to destination class="iconav-brand" title=title data-toggle="tooltip" data-placement="right" data-container="body"}}
-  <span class="{{icon}} iconav-brand-icon"></span>
+  {{#if hasBlock}}
+    {{yield}}
+  {{else}}
+    <span class="{{icon}} iconav-brand-icon"></span>
+  {{/if}}
 {{/link-to}}

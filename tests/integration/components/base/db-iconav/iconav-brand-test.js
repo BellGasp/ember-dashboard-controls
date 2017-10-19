@@ -14,6 +14,18 @@ test('it renders using the inline syntax', function(assert) {
   assert.equal(this.$('span.iconav-brand-icon').length, 1);
 });
 
+test('it renders using the block syntax', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`
+    {{#base/db-iconav/iconav-brand}}
+      <div class="inside"></div>
+    {{/base/db-iconav/iconav-brand}}
+  `);
+
+  assert.equal(this.$('a.iconav-brand .inside').length, 1);
+});
+
 test('it binds the icon property', function(assert) {
   assert.expect(1);
 
