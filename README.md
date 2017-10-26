@@ -28,7 +28,7 @@ The `titles` component exposes the `title` and `subtitle` components which can b
 
 #### Toolbar
 
-The `toolbar` currently only exposes the `divider` component which is used to create vertical dividers inside the toolbar. The toolbar items themselves should use the `dashhead-toolbar-item` class for the time being.
+The `toolbar` currently only exposes the `divider` component which is used to create vertical dividers inside the toolbar. The toolbar items themselves should use the `dashhead-toolbar-item` class for the time being. 
 
 _Here's what a complete dashhead would look like:_
 
