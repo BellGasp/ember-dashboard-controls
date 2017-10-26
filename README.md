@@ -20,7 +20,7 @@ Like most ember addons, simply run `ember install ember-dashboard-controls` and 
 
 ### Dashhead
 
-The Dashhead currently exposes the `titles` and `toolbar` components which can be used to create the left and right side of the dashhead component respectively.
+The Dashhead currently exposes the `titles` and `toolbar` components which can be used to create the left and right side of the dashhead component respectively. 
 
 #### Titles
 
