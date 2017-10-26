@@ -65,7 +65,7 @@ The `brand` component can be configured via the `icon` and `destination` propert
 
 #### Items
 
-The `items` component exposes the `item` component which together are combined to create the menu items.
+The `items` component exposes the `item` component which together are combined to create the menu items. 
 
 ##### Item
 
