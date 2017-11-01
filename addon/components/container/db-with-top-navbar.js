@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../../templates/components/container/db-top-navbar-container';
+import layout from '../../templates/components/container/db-with-top-navbar';
 
 export default Ember.Component.extend({
   layout,
