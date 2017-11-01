@@ -48,3 +48,42 @@ test('it is possible to use the inverse color scheme', function(assert) {
 
   assert.equal(this.$('nav.navbar-inverse').length, 1);
 });
+
+test('it yeilds the `brand` component', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`
+    {{#db-navbar as |navbar|}}
+      {{#navbar.brand}}
+      {{/navbar.brand}}
+    {{/db-navbar}}
+  `);
+
+  assert.equal(this.$('nav.db-navbar > a.navbar-brand').length, 1);
+});
+
+test('it yeilds the `toggler` component', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`
+    {{#db-navbar as |navbar|}}
+      {{#navbar.toggler}}
+      {{/navbar.toggler}}
+    {{/db-navbar}}
+  `);
+
+  assert.equal(this.$('nav.db-navbar > button.db-navbar-toggler').length, 1);
+});
+
+test('it yeilds the `items` component', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`
+    {{#db-navbar as |navbar|}}
+      {{#navbar.items}}
+      {{/navbar.items}}
+    {{/db-navbar}}
+  `);
+
+  assert.equal(this.$('nav.db-navbar > div.db-navbar-items').length, 1);
+});

@@ -17,5 +17,5 @@ export default Component.extend({
 
   basic: computed('fluid', 'spacious', function() {
     return !this.get('fluid') && !this.get('spacious');
-  }),
+  })
 });

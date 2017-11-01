@@ -15,4 +15,8 @@ export default Ember.Component.extend({
   toggleClass: computed('breakpoint', function() {
     return `navbar-toggleable-${this.get('breakpoint')}`;
   }),
+
+  navbarId: computed('elementId', function() {
+    return `${this.get('elementId')}-navbar-responsive`;
+  }),
 });
