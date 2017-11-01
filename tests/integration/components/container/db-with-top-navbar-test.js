@@ -30,13 +30,26 @@ test('it yields a fluid container', function(assert) {
   assert.expect(3);
 
   this.render(hbs`
-    {{#db-with-top-navbar as |top-nav|}}
-      {{#top-nav.container}}
-      {{/top-nav.container}}
+    {{#db-with-top-navbar as |wrapper|}}
+      {{#wrapper.container}}
+      {{/wrapper.container}}
     {{/db-with-top-navbar}}
   `);
 
   assert.equal(this.$('div.with-top-navbar > div.db-container').length, 1);
   assert.equal(this.$('div.with-top-navbar > div.container-fluid').length, 1);
   assert.equal(this.$('div.with-top-navbar > div.container-fluid-spacious').length, 1);
+});
+
+test('it yields a navbar', function(assert) {
+  assert.expect(1);
+
+  this.render(hbs`
+    {{#db-with-top-navbar as |wrapper|}}
+      {{#wrapper.navbar}}
+      {{/wrapper.navbar}}
+    {{/db-with-top-navbar}}
+  `);
+
+  assert.equal(this.$('div.with-top-navbar > nav.db-navbar').length, 1);
 });
