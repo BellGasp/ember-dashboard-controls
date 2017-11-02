@@ -1,0 +1,1 @@
+export { default } from 'ember-dashboard-controls/components/base/db-navbar/navbar-toggler';

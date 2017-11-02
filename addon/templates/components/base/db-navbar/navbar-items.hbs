@@ -1,0 +1,6 @@
+<ul class="nav navbar-nav">
+  {{yield (hash
+    item=(component 'base/db-navbar/navbar-items/navbar-item')
+    action=(component 'base/db-navbar/navbar-items/navbar-action')
+  )}}
+</ul>
